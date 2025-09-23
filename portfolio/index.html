@@ -3,58 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfólio - Álvaro Daniel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Álvaro Daniel Teixeira de Almeida</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container header-nav">
+            <h1>Álvaro Daniel Teixeira de Almeida</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="apresentacao">
-        <h2>Bem-vindo ao meu portfólio</h2>
-        <p>Sou estudante de Sistemas de Informação e este é o meu portfólio acadêmico.</p>
+        <div class="container">
+            <h2>Bem-vindo ao meu portfólio</h2>
+            <p>Sou estudante de Sistemas de Informação e este é o meu portfólio acadêmico.</p>
+        </div>
     </section>
 
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Estudo programação, mas meu foco principal é a parte gerencial da Tecnologia da Informação. 
-        Por esse motivo escolhi o curso de Sistemas de Informação. Atualmente, estou no sexto período da faculdade.</p>
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Estudo programação, mas meu foco principal é a parte gerencial da Tecnologia da Informação. 
+            Por esse motivo escolhi o curso de Sistemas de Informação. Atualmente, estou no sexto período da faculdade.</p>
+        </div>
     </section>
 
     <section id="projetos">
-        <h2>Projetos</h2>
-        <ul>
-            <li>
-                <strong>Sistema de Monitoração de Clima (UPX 3)</strong>  
-                <p>Desenvolvido com HTML, CSS e JavaScript, utilizando a API do OpenWeather.</p>
-            </li>
-            <li>
-                <strong>Agente de IA para Consumo Energético (UPX 4)</strong>  
-                <p>Projeto que consumia a API do Gemini para ajudar usuários a poupar energia e aumentar a eficiência energética de seus locais.</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2>Projetos</h2>
+
+           
+            <div class="grid-projetos">
+                <div class="item">
+                    <h3>Sistema de Monitoração de Clima (UPX 3)</h3>
+                    <p>Desenvolvido com HTML, CSS e JavaScript, utilizando a API do OpenWeather.</p>
+                </div>
+                <div class="item">
+                    <h3>Agente de IA para Consumo Energético (UPX 4)</h3>
+                    <p>Projeto que consumia a API do Gemini para ajudar usuários a poupar energia e aumentar a eficiência energética.</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:alvarood023@gmail.com">alvarood023@gmail.com</a></p>
-        <p>Telefone: (31) 99586-6359</p>
+        <div class="container">
+            <h2>Contato</h2>
+            
+            <div class="contato-flex">
+                <p>Email: <a href="mailto:alvarood023@gmail.com">alvarood023@gmail.com</a></p>
+                <p>Telefone: (31) 99586-6359</p>
+            </div>
+            <p>Redes sociais: 
+                <a href="https://www.linkedin.com/in/alvaro-daniel-860655223/" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/alvarodta" target="_blank">GitHub</a>
+            </p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 - Portfólio de Álvaro Daniel</p>
-        <p>Redes sociais: 
-            <a href="https://www.linkedin.com/in/alvaro-daniel-860655223/" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/alvarodta" target="_blank">GitHub</a>
-        </p>
+        <div class="container">
+            <p>© 2025 - Portfólio de Álvaro Daniel</p>
+        </div>
     </footer>
 
 </body>
 </html>
+
