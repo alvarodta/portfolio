@@ -5,6 +5,7 @@
     <title>Portfólio - Álvaro Daniel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
 
@@ -15,6 +16,7 @@
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#interatividade">Interatividade</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -39,8 +41,6 @@
     <section id="projetos">
         <div class="container">
             <h2>Projetos</h2>
-
-           
             <div class="grid-projetos">
                 <div class="item">
                     <h3>Sistema de Monitoração de Clima (UPX 3)</h3>
@@ -51,14 +51,38 @@
                     <p>Projeto que consumia a API do Gemini para ajudar usuários a poupar energia e aumentar a eficiência energética.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section id="interatividade">
+        <div class="container">
+            <h2>Área Interativa (JavaScript)</h2>
+
+            <div class="interativo">
+                <h3>Exibir Texto Digitado</h3>
+                <input type="text" id="entrada" placeholder="Digite algo aqui">
+                <div class="botoes">
+                    <button id="btnMostrar">Mostrar</button>
+                    <button id="btnLimpar">Limpar</button>
+                </div>
+                <div id="resultado" class="resultado"></div>
+            </div>
+
+            <div class="interativo contador-box">
+                <h3>Contador</h3>
+                <div id="contador" class="contador">0</div>
+                <div class="botoes">
+                    <button id="btnMais">+1</button>
+                    <button id="btnMenos">-1</button>
+                    <button id="btnZerar">Zerar</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contato">
         <div class="container">
             <h2>Contato</h2>
-            
             <div class="contato-flex">
                 <p>Email: <a href="mailto:alvarood023@gmail.com">alvarood023@gmail.com</a></p>
                 <p>Telefone: (31) 99586-6359</p>
@@ -78,4 +102,3 @@
 
 </body>
 </html>
-
