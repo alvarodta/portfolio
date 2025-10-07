@@ -25,6 +25,9 @@
         <div class="container">
             <h2>Bem-vindo ao meu portfólio</h2>
             <p>Sou estudante de Sistemas de Informação e este é o meu portfólio acadêmico.</p>
+
+            <button id="btnSaudacao">Clique aqui</button>
+            <p id="mensagem"></p>
         </div>
     </section>
 
@@ -39,8 +42,6 @@
     <section id="projetos">
         <div class="container">
             <h2>Projetos</h2>
-
-           
             <div class="grid-projetos">
                 <div class="item">
                     <h3>Sistema de Monitoração de Clima (UPX 3)</h3>
@@ -51,14 +52,12 @@
                     <p>Projeto que consumia a API do Gemini para ajudar usuários a poupar energia e aumentar a eficiência energética.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="contato">
         <div class="container">
             <h2>Contato</h2>
-            
             <div class="contato-flex">
                 <p>Email: <a href="mailto:alvarood023@gmail.com">alvarood023@gmail.com</a></p>
                 <p>Telefone: (31) 99586-6359</p>
@@ -76,5 +75,19 @@
         </div>
     </footer>
 
+    <script>
+        console.log("Bem-vindo ao portfólio de Álvaro Daniel!");
+
+        const botao = document.getElementById("btnSaudacao");
+        const mensagem = document.getElementById("mensagem");
+
+        botao.addEventListener("click", function() {
+            mensagem.textContent = "Obrigado por visitar meu portfólio! 😄";
+            mensagem.style.color = "#0a58ca";
+            mensagem.style.fontWeight = "bold";
+        });
+    </script>
+
 </body>
 </html>
+
